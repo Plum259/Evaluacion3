@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<div class="container">
+    <form method="POST">
+        <div class="form-group">
+            <label for="Nombre 1">Nombre 1:</label>
+            <input type="text" name="Nombre1"><br>
+        </div>
+        <div class="form-group">
+            <label for="Nombre 2">Nombre 2:</label>
+            <input type="text" name="Nombre2"><br>
+        </div>
+        <div class="form-group">
+            <label for="Nombre 3">Nombre 3:</label>
+            <input type="text" name="Nombre3"><br>
+        </div>
+        <div>
+            <br>
+            <input type="submit" name="Enviar">
+        </div>
+    </form>
+    {% if var and caracteres %}
+    <div>
+        <p>El nombre con mayor cantidad de caracteres es: {{var}}</p>
+        <p>El nombre tiene: {{caracteres}} caracteres</p>
+    </div>
+    {% endif %}
+</div>
+</body>
+</html>
